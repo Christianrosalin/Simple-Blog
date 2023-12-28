@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="navbar">
+            <div class="navTitle">My Blog</div>
+            <div class="navList">
+
+            </div>
+        </div>
+    </div> --> 
+    
+    <nav class="navbar">
+        <p>BLOG</p>
+        <ul class="link-container">
+            <li class="link-item"><a href="/" class="link">Home</a></li>
+            <li class="link-item"><a href="/articles/newArticles" class="link">New Blog</a></li>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        </ul>
+    </nav>
+    <div class="card-container">
+    <% data.forEach(item => { %>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"><%= item.title %></h4>
+                <div class="card-subtitle">
+                    <%= item.author %>
+                </div>
+                <div class="card-desc">
+                    <%= item.content %>
+                </div>
+
+                <ul class="link-grp">
+                    <li>
+                        <a href="/edit/<%= item.id %>" class="link-items">Edit</a>
+                        <a href="/delete/<%= item.id %>" class="link-items">Delete</a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+    <% }) %>
+    </div>
+
+</body>
+</html>

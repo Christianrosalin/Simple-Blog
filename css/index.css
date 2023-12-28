@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    position: relative;
+}
+/* ::selection{
+    background: #1b1b1b;
+    color: #fff;
+} */
+
+.navbar {
+    width: 100%;
+    height: 5rem;
+    background: #7071E8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem;
+    align-items: center;
+    z-index: 9;
+}
+
+.navbar p{
+    font-size: 2.5rem;
+    color: #f1f1f1;
+    font-family: 'Abril Fatface', serif;
+}
+
+.link-container{
+    display: flex;
+    list-style: none;
+}
+
+.link{
+    padding: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #f1f1f1;
+    font-size: 20px;
+}
+
+.card-container{
+    display: block;
+}
+
+.card{
+    position: relative;
+    border: 1px solid black;
+    height: auto;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 7rem;
+    /* margin-left: 15rem; */
+    
+}
+
+.card-body h4 div{
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+.card-body{
+    justify-content: space-between;
+}
+
+.card-desc{
+    margin-top: 10px;
+}
+
+.link-grp{
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 5px;
+    
+}
+
+/* .lnk-items{
+    margin-left: 10px;
+    text-decoration: none;
+    
+} */
+
+/* New Article */
+
+.container{
+    position: relative;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 7rem;
+    /* justify-content: center; */
+}
+
+.sub-container{
+    width: 50%;
+  height: 50px;
+  /* background-color: red; */
+  /* Center horizontally*/
+  margin: 0 auto;
+}
+
+input{
+    width: 100%;
+    height: 2.5rem;
+}
+
+.section{
+    margin-top: 2rem;
+}
+
+.content{
+    height: 10rem;
+}
+
+.btn{
+    /* height: 2.5rem;
+    width: 10rem; */
+    /* margin-top: 3.5rem;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.btn-group{
+    margin-top: 2rem;
+}
+
+.btn:not(:last-child){
+    margin-right: 2.5rem;
+
+}
+
+.cancel_btn{
+    /* display: inline-block; */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+/* EDIT Form */
+
+.edit-container{
+    position: relative;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 7rem;
+}
+
+.edit-form{
+   padding: 20px;
+   height: 50%;
+}
+
+.edit-form a{
+    display: flex;
+    bottom: 10rem;
+}

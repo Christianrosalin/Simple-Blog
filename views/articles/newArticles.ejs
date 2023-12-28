@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <p>BLOG</p>
+        <ul class="link-container">
+            <li class="link-item"><a href="/" class="link">Home</a></li>
+            <li class="link-item"><a href="/articles/newArticles" class="link">New Blog</a></li>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        </ul>
+    </nav>
+
+    <form class="container" action="/submit" method="post">
+        <div class="sub-container">
+        <h1>New Post</h1>
+        <div class="section">
+            <!-- <p>Post Title:</p> -->
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div class="section">
+            <!-- <p>Author:</p> -->
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+        </div>
+        <div class="section">
+            <!-- <p>Content:</p> -->
+            <label for="content">Content:</label>
+            <textarea name="content" id="content" cols="48" rows="15" required></textarea>
+            
+        </div>
+        <div class="btn-group">
+        <!-- <a href="/" class="cancel_btn">Cancel</a>
+        <a href="" class="btn">Post</a> -->
+        <button class="btn" type="submit">Post</button>
+        <!-- <button class="btn">Cancel</button> -->
+        <a href="/" class="btn" >Cancel</a>
+        </div>
+
+        </div>
+    </form>
+
+</body>
+</html>
