@@ -109,22 +109,6 @@ app.get('/edit/:id', (req, res) => {
     })
 })
 
-// UPDATE Data by ID
-// app.put('/edit/:id', (req, res) => {
-//     const postId = req.params.id;
-//     const postData = req.body;
-
-//     db.query('UPDATE posts SET ? WHERE id = ?',
-//     [postData, postId], (err, result) => {
-//         if (err){
-//             console.error('Error updating: ', err.stack);
-//             res.status(500).json({ error: 'Internal Server Error' });
-//             return;
-//         }
-//         res.status(200).send('Post Updated Successfully')
-//     })
-// })
-
 
 // UPDATE data by id
 app.post('/edit/:id', (req, res) => {
